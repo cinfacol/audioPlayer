@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/font/fa-brands-400.7b5acd02.eot");
+  src: url("font/fa-brands-400.7b5acd02.eot?#iefix") format("embedded-opentype"), url("font/fa-brands-400.34cc846b.woff2") format("woff2"), url("font/fa-brands-400.75159956.woff") format("woff"), url("font/fa-brands-400.f885063e.ttf") format("truetype"), url("font/fa-brands-400.1f0eb095.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("font/fa-regular-400.d4b9b17f.eot");
+  src: url("font/fa-regular-400.d4b9b17f.eot?#iefix") format("embedded-opentype"), url("font/fa-regular-400.82c42f2f.woff2") format("woff2"), url("font/fa-regular-400.adc5c7aa.woff") format("woff"), url("font/fa-regular-400.b073eab5.ttf") format("truetype"), url("font/fa-regular-400.16d6ac71.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("font/fa-solid-900.0b60ff24.eot");
+  src: url("font/fa-solid-900.0b60ff24.eot?#iefix") format("embedded-opentype"), url("font/fa-solid-900.55d5ef42.woff2") format("woff2"), url("font/fa-solid-900.f824330b.woff") format("woff"), url("font/fa-solid-900.47a039f3.ttf") format("truetype"), url("font/fa-solid-900.d08d5f59.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-play:before {
+  content: "\f04b"; }
+
+.fa-play-circle:before {
+  content: "\f144"; }
+
+.fa-pause:before {
+  content: "\f04c"; }
+
+.fa-pause-circle:before {
+  content: "\f28b"; }
+
+.audioPlayer {
+  box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Source Sans Pro", sans-serif;
+  width: 600px;
+  display: flex;
+}
+.audioPlayer canvas {
+  flex: 2;
+  width: 100%;
+  background-color: black;
+}
+.audioPlayer .playlist {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 0%, rgba(55, 55, 55, 0.6) 64%), url("font/beige-paper.8b38093e.png");
+  display: flex;
+  flex-direction: column;
+}
+.audioPlayer .playlist a {
+  padding: 0.75rem 2.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+.audioPlayer .playlist a i {
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+.audioPlayer .playlist a:hover {
+  background-color: #fff;
+  color: #000;
+}
