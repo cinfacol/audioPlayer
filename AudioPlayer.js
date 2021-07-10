@@ -46,9 +46,9 @@ export default class AudioPlayer {
         this.audioElem = document.createElement('audio');
         const playListElem = document.createElement('div');
         playListElem.classList.add('playlist');
-        const playElem = document.createElement('button');
+        /*const playElem = document.createElement('button');
         playElem.classList.add('play');
-        playElem.innerHTML = '<i class="fa fa-play"></i>';
+        playElem.innerHTML = '<i class="fa fa-play"></i>';*/
         this.visualiserElem = document.createElement('canvas');
         this.playerElem.appendChild(this.audioElem);
         this.playerElem.appendChild(playListElem);
