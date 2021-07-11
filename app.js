@@ -7,5 +7,5 @@ const player = new AudioPlayer('.audioPlayer', [
     { name: 'Girls Like You', url: 'media/audios/Girls_Like_You.mp3' },
     { name: 'Señorita', url: 'media/audios/Senorita.mp3' },
     { name: 'On My Way', url: 'media/audios/On_My_Way.mp3' },
-    { name: 'On My Way', url: 'media/audios/Musica_para_la_magnana.mp3' },
+    { name: 'Música Pop', url: 'media/audios/Musica_para_la_magnana.mp3' },
 ]);

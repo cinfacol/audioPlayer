@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
@@ -71,11 +75,18 @@ body {
 .fa-pause-circle:before {
   content: "\f28b"; }
 
+.fa-backward:before {
+  content: "\f04a"; }
+
+.fa-forward:before {
+  content: "\f04e"; }
+
 .audioPlayer {
   box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.2);
   font-family: "Source Sans Pro", sans-serif;
   width: 600px;
   display: flex;
+  flex-direction: column;
 }
 .audioPlayer canvas {
   flex: 2;
@@ -103,3 +114,30 @@ body {
   background-color: #fff;
   color: #000;
 }
+
+.audioPlayer .container {
+        display: flex;
+    }
+
+.audioPlayer .progressBar {
+    background-color: #fff;
+    width: 100%;
+    height: 3rem;
+    padding: .5rem;
+    }
+
+.audioPlayer .progressBar canvas {
+        width: 100%;
+        margin: 0 auto;
+        height: 8px;
+        background-color: black;
+    }
+.audioPlayer .progressBar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.audioPlayer .progressBar .timer {
+        color: #000;
+    }
